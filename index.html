@@ -1606,13 +1606,13 @@
         });
     </script>
 </body>
-</html> {
+</html>
+<script>
+             {
                 // Hide loading
                 btnText.style.display = 'inline';
                 loading.style.display = 'none';
             }
-        }
-
         async function submitLogin(event) {
             event.preventDefault();
             const button = event.target.querySelector('button[type="submit"]');
@@ -1765,6 +1765,7 @@
             const button = event.target.querySelector('button[type="submit"]');
             const btnText = button.querySelector('.btn-text');
             const loading = button.querySelector('.loading');
+        }
             
             // Show loading
             btnText.style.display = 'none';
@@ -1799,4 +1800,5 @@
             } catch (error) {
                 console.error('Newsletter error:', error);
                 alert('Error subscribing. Please try again.');
-            } finally
+            }
+            </script>
